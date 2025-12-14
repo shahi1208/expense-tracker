@@ -14,7 +14,11 @@ featuring JWT authentication and PostgreSQL database support.
 - PostgreSQL
 - Spring Security + JWT
 
-## Release updates
+## Development updates
+### 0.0.2-SNAPSHOT
+1. Added User and Expense Repositories with JPA annotations
+2. Added Dummy data with dataLoader and tested db connections
+3. Created controller for User and Expense and tested get api using PathVariables
 ### 0.0.1-SNAPSHOT
 1. Added User and Expense entities with JPA annotations 
 2. Established PostgreSQL DB connection 
