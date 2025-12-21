@@ -21,6 +21,9 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 
+/**
+ * Entity class for Expense
+ */
 @Entity
 @Table(name="expense")
 @AllArgsConstructor

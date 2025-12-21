@@ -1,6 +1,6 @@
 package com.project.expense_tracker.entity;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
@@ -15,6 +15,9 @@ import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
 
+/**
+ * Entity class for User
+ */
 @Entity
 @Table(name="users")
 @AllArgsConstructor
@@ -31,8 +34,7 @@ public class User {
     @Column(unique = true,  nullable = false, length = 100)
     private String username;
 
-    @JsonIgnore
-    @Column(nullable = false)
+    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
 
     @Column(length = 50)
